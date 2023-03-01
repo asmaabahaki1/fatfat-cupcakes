@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.debut h1{
+    margin-left: 634px;
+    margin-top: 165px;
+}
+
+.elkef{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px grey;
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;
+    margin-left: 120px;
+    margin-top: 70px;
+}
+
+.elkef img{
+    position: relative;
+    top: 36px;
+    width: 90px;
+    left: 60px;
+}
+
+.elkef h3{
+    position: relative;
+    margin-top: 40px;
+    left: 9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.elkef h1{
+    position: relative;
+    top: -20px;
+    left: 144px;
+    color: gray;
+    font-size: 14px;
+}
+ 
+.elkef button{
+    border: 2px solid rgb(168, 20, 70);
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 109px;
+    margin-top: 26px;
+    margin-left: 45px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgb(168, 20, 70);
+    border-radius: 31px;
+    outline: none;
+    cursor: pointer;
+}
+
+.mio{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px grey;
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;
+    margin-left: 580px;
+    margin-top: -256px;
+}
+
+.mio img{
+    position: relative;
+    top: 36px;
+    width: 90px;
+    left: 50px;
+}
+
+.mio h3{
+    position: relative;
+    margin-top: 40px;
+    left: 9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.mio h1{
+    position: relative;
+    top: -20px;
+    left: 144px;
+    color: gray;
+    font-size: 14px;
+}
+ 
+.mio button{
+    border: 2px solid rgb(168, 20, 70);
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 109px;
+    margin-top: 26px;
+    margin-left: 45px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgb(168, 20, 70);
+    border-radius: 31px;
+    outline: none;
+    cursor: pointer;
+}
+
+.dettol{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px grey;
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;
+    margin-left: 1080px;
+    margin-top: -256px;
+}
+
+.dettol img{
+    position: relative;
+    top: 36px;
+    width: 90px;
+    left: 50px;
+}
+
+.dettol h3{
+    position: relative;
+    margin-top: 40px;
+    left: 9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.dettol h1{
+    position: relative;
+    top: -20px;
+    left: 144px;
+    color: gray;
+    font-size: 14px;
+}
+ 
+.dettol button{
+    border: 2px solid rgb(168, 20, 70);
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 109px;
+    margin-top: 26px;
+    margin-left: 45px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgb(168, 20, 70);
+    border-radius: 31px;
+    outline: none;
+    cursor: pointer;
+}

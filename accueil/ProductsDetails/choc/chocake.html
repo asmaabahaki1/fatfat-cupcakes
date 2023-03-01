@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CHOCOLAT CAKE - Fat Fat</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="chocake.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="chocake" id="choc">
+        <img src="QA.png" alt="">
+        <h3>CHOCOLAT CAKE</h3>
+        <h2>Petit gâteau au chocolat noir</h2>
+        <h1>11.50 DH</h1>
+        <button onclick="addToPanier()">AJOUTER</button>
+    </div>
+    <script>
+        const currentProduct = {
+            id: 'choc',
+            imgSrc: '/accueil/ProductsDetails/choc/QA.png',
+            shortName: "CHOCOLAT CAKE",
+            name: "Petit gâteau au chocolat noir",
+            price: "11.50 DH",
+            items:1
+        }
+
+        function addToPanier() {
+            const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+            if (productsInPanier.some(product => product.id === currentProduct.id)) {
+                // product is in panier
+                alert('product is in panier')
+                return
+            }
+            productsInPanier.push(currentProduct)
+            localStorage.setItem('panier', JSON.stringify(productsInPanier))
+            window.open("/panier/panier.html")
+        }
+    </script>
+</body>
+</html>

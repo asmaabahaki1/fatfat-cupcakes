@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo img{
+    width: 123px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    cursor: pointer;
+    margin-left: 628px;
+}
+
+.container{
+    width: 375px;
+    height: 420px;
+    position: relative;
+    left: 488px;
+    top: 83px;
+}
+
+.container::-webkit-scrollbar{
+    display: none;
+}
+
+.container form{
+    width: 100%;
+    border-radius: 4px;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+}
+
+.container form input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    border: 1px solid rgb(168, 20, 70);
+    font-size: 16px;
+    font-weight: 600;
+    padding: 8px 2px;
+}
+
+.container i{
+    padding-left: 350px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.product-list{
+    padding: 18px 0;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+}
+
+.product img{
+    position: relative;
+    top: 12px;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    left: -440px;
+    object-fit: cover;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product h3{
+    position: relative;
+    top: 37px;
+    margin-left: 59px;
+    font-size: 11px;
+    object-fit: cover;
+}
+
+.product p{
+    position: relative;
+    top: 25px;
+    left: -101px;
+    font-size: 9px;
+    object-fit: cover;
+}
+
+.product h1{
+    position: relative;
+    top: 21px;
+    left: -50px;
+    font-size: 18px;
+    object-fit: cover;
+}
+
+.product button{
+    border: 2px solid rgb(168, 20, 70);
+    height: 33px;
+    margin: -44px;
+    position: absolute;
+    width: 109px;
+    margin-top: -30px;
+    margin-left: 545px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgb(168, 20, 70);
+    border-radius: 31px;
+    outline: none;
+    cursor: pointer;
+}
+
+.product .p-details h3{
+    font-size: 11px;
+    left: -499px;
+}
+
+.product .p-details p{
+    font-size: 9px;
+}
+
+.product .p-details h1{
+    left: 163px;
+    top: 9px;
+    font-size: 18px;
+}
+
+.product .p-details .button{
+    left: 233px;
+    top: 9px;
+}

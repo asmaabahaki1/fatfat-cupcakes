@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HUILOR - Fat Fat</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="huilor.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="huilor" id="huilor">
+        <img src="135_1.jpeg" alt="">
+        <h3>HUILOR</h3>
+        <h2>Huile de tournesol 1L - HUILOR</h2>
+        <h1>30.26 DH</h1>
+        <button onclick="addToPanier()">AJOUTER</button>
+    </div>
+    <script>
+        const currentProduct = {
+            id: 'huilor',
+            imgSrc: '/accueil/ProductsDetails/huilor/135_1.jpeg',
+            shortName: "HUILOR",
+            name: "Huile de tournesol 1L - HUILOR",
+            price: "30.26 DH",
+            items:1
+        }
+
+        function addToPanier() {
+            const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+            if (productsInPanier.some(product => product.id === currentProduct.id)) {
+                // product is in panier
+                alert('product is in panier')
+                return
+            }
+            productsInPanier.push(currentProduct)
+            localStorage.setItem('panier', JSON.stringify(productsInPanier))
+            window.open("/panier/panier.html")
+        }
+    </script>
+</body>
+
+</html>

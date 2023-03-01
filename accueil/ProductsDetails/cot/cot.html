@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COTTAGE - Fat Fat</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="cot.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="cot" id="cot">
+        <img src="290ce33ff053f61cd0174a884b9f0fb5.png" alt="">
+        <h3>COTTAGE</h3>
+        <h2>Douche lait hydratante tendre caramel 250ml - COTTAGE</h2>
+        <h1>30.25 DH</h1>
+        <button onclick="addToPanier()">AJOUTER</button>
+    </div>
+    <script>
+        const currentProduct = {
+            id: 'cot',
+            imgSrc: '/accueil/ProductsDetails/cot/290ce33ff053f61cd0174a884b9f0fb5.png',
+            shortName: "COTTAGE",
+            name: "Douche lait hydratante tendre caramel 250ml - COTTAGE",
+            price: "30.25 DH",
+            items:1
+        }
+
+        function addToPanier() {
+            const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+            if (productsInPanier.some(product => product.id === currentProduct.id)) {
+                // product is in panier
+                alert('product is in panier')
+                return
+            }
+            productsInPanier.push(currentProduct)
+            localStorage.setItem('panier', JSON.stringify(productsInPanier))
+            window.open("/panier/panier.html")
+        }
+    </script>
+</body>
+</html>

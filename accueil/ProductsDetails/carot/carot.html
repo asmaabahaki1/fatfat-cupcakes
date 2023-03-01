@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrot cake - Fat Fat</title>
+    <link rel="icon" href="/accueil/imagesAcceuil/l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="carot.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="Image 7@2x.png" alt="">
+    </div>
+    <div class="carot" id="carot">
+        <img src="/accueil/ProductsDetails/carot/Carrot cake.png" alt="">
+        <h3>Carrot cake</h3>
+        <h2>Yaourt à boire fraise Dan UP 8x170g - DANONE</h2>
+        <h1>23 MAD</h1>
+        <button onclick="addToPanier()">AJOUTER</button>
+    </div>
+    <script>
+        const currentProduct = {
+            id: 'carot',
+            imgSrc: '/accueil/ProductsDetails/carot/Carrot cake.png',
+            shortName: "Carrot cake",
+            name: "Yaourt à boire fraise Dan UP 8x170g - DANONE",
+            price: "23 MAD",
+            items:1
+        }
+
+        function addToPanier() {
+            const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+            if (productsInPanier.some(product => product.id === currentProduct.id)) {
+                // product is in panier
+                alert('product is in panier')
+                return
+            }
+            productsInPanier.push(currentProduct)
+            localStorage.setItem('panier', JSON.stringify(productsInPanier))
+            window.open("/panier/panier.html")
+        }
+    </script>
+</body>
+</html>

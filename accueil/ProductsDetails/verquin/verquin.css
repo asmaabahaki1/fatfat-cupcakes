@@ -1,0 +1,161 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.debut h1{
+    margin-left: 634px;
+    margin-top: 165px;
+}
+
+.tofita{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px grey;
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;
+    margin-left: 120PX;
+    margin-top: 70px;
+}
+
+.tofita img{
+    position: relative;
+    top: 36px;
+    width: 87px;
+    left: 66px;
+}
+
+.tofita h3{
+    position: relative;
+    margin-top: 56px;
+    left: 9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.tofita h1{
+    position: relative;
+    top: -20px;
+    left: 144px;
+    color: gray;
+    font-size: 14px;
+}
+ 
+.tofita button{
+    border: 2px solid rgb(168, 20, 70);
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 109px;
+    margin-top: 26px;
+    margin-left: 45px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgb(168, 20, 70);
+    border-radius: 31px;
+    outline: none;
+    cursor: pointer;
+}
+
+.bubbaloo{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px grey;
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;
+    margin-left: 590px;
+    margin-top: -258px;
+}
+
+.bubbaloo img{
+    position: relative;
+    top: 36px;
+    width: 87px;
+    left: 66px;
+}
+
+.bubbaloo h3{
+    position: relative;
+    margin-top: 56px;
+    left: 9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.bubbaloo h1{
+    position: relative;
+    top: -20px;
+    left: 144px;
+    color: gray;
+    font-size: 14px;
+}
+ 
+.bubbaloo button{
+    border: 2px solid rgb(168, 20, 70);
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 109px;
+    margin-top: 30px;
+    margin-left: 45px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgb(168, 20, 70);
+    border-radius: 31px;
+    outline: none;
+    cursor: pointer;
+}
+
+.cremo{
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px grey;
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;
+    margin-left: 1050px;
+    margin-top: -258px;
+}
+
+.cremo img{
+    position: relative;
+    top: 36px;
+    width: 60px;
+    left: 66px;
+}
+
+.cremo h3{
+    position: relative;
+    margin-top: 56px;
+    left: 9px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.cremo h1{
+    position: relative;
+    top: -20px;
+    left: 144px;
+    color: gray;
+    font-size: 14px;
+}
+ 
+.cremo button{
+    border: 2px solid rgb(168, 20, 70);
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 109px;
+    margin-top: 27px;
+    margin-left: 45px;
+    font-size: 13px;
+    color: #ffffff;
+    background-color: rgb(168, 20, 70);
+    border-radius: 31px;
+    outline: none;
+    cursor: pointer;
+}

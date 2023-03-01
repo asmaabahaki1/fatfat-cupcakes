@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACTIVIA - Fat Fat</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="act.css">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="/accueil/imagesAcceuil/logo.png" alt="">
+    </div>
+    <div class="act" id="act">
+        <img src="c28b85fe285585cf55993b25a24b6235.png" alt="act">
+        <h3>ACTIVIA</h3>
+        <h2>Yaourt brassé céréales Activia 110g - DANONE</h2>
+        <h1>2.95 DH</h1>
+        <button onclick="addToPanier()">AJOUTER</button>
+    </div>
+    <script>
+        const currentProduct = {
+            id: 'act',
+            imgSrc: '/accueil/ProductsDetails/act/c28b85fe285585cf55993b25a24b6235.png',
+            shortName: "ACTIVIA",
+            name: "Yaourt brassé céréales Activia 110g - DANONE",
+            price: "2.95 DH",
+            items:1
+        }
+
+        function addToPanier() {
+            const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+            if (productsInPanier.some(product => product.id === currentProduct.id)) {
+                // product is in panier
+                alert('product is in panier')
+                return
+            }
+            productsInPanier.push(currentProduct)
+            localStorage.setItem('panier', JSON.stringify(productsInPanier))
+            window.open("/panier/panier.html")
+        }
+    </script>
+</body>
+
+</html>

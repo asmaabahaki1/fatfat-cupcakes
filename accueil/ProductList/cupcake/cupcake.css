@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', 'Arial', sans-serif;
+}
+
+.logo img{
+    width: 123px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 28px;
+}
+
+.debut h1{    
+    margin-top: 3rem;
+    margin-left: 19px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.element {
+    background-color: white;
+    margin-left: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 207px);
+    gap: 1rem;
+    justify-content: center;
+}
+
+.cheese{
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;
+}
+
+.cheese .img1 img{
+    position: relative;
+    top: 36px;
+    width: 200px;
+    left: -33px;
+}
+
+.cheese h3{
+    position: relative;
+    top: 34px;
+    left: -29px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.cheese h1{
+    position: relative;
+    top: 20px;
+    left: 126px;
+    font-size: 12px;
+}
+
+.cheese button{
+    border: 2px solid gainsboro;
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 208px;
+    margin-top: 46px;
+    margin-left: -33px;
+    font-size: 13px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+}
+
+.cheese button:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: 0.5px solid rgb(0, 0, 0);
+}
+
+.modeleine{
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;    
+}
+
+.modeleine .img3 img{
+    position: relative;
+    top: 36px;
+    width: 200px;
+    left: -28px;
+}
+
+.modeleine h3{
+    position: relative;
+    top: 34px;
+    left: -23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.modeleine h1{
+    position: relative;
+    top: 20px;
+    left: 131px;
+    font-size: 12px;
+}
+
+.modeleine button{
+    border: 2px solid gainsboro;
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 208px;
+    margin-top: 46px;
+    margin-left: -28px;
+    font-size: 13px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+}
+
+.modeleine button:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: 0.5px solid rgb(0, 0, 0);
+}
+
+.meringue{
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;    
+}
+
+.meringue .img5 img{
+    position: relative;
+    top: 36px;
+    width: 200px;
+    left: -28px;
+}
+
+.meringue h3{
+    position: relative;
+    top: 34px;
+    left: -23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.meringue h1{
+    position: relative;
+    top: 20px;
+    left: 131px;
+    font-size: 12px;
+}
+
+.meringue button{
+    border: 2px solid gainsboro;
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 208px;
+    margin-top: 46px;
+    margin-left: -28px;
+    font-size: 13px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+}
+
+.meringue button:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: 0.5px solid rgb(0, 0, 0);
+}
+
+.sweet{
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;    
+}
+
+.sweet .img7 img{
+    position: relative;
+    top: 36px;
+    width: 200px;
+    left: -28px;
+}
+
+.sweet h3{
+    position: relative;
+    top: 34px;
+    left: -23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.sweet h1{
+    position: relative;
+    top: 20px;
+    left: 131px;
+    font-size: 12px;
+}
+
+.sweet button{
+    border: 2px solid gainsboro;
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 208px;
+    margin-top: 46px;
+    margin-left: -28px;
+    font-size: 13px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+}
+
+.sweet button:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: 0.5px solid rgb(0, 0, 0);
+}
+
+.souffle{
+    outline: none;
+    width: 207px;
+    height: 259px;
+    border-radius: 15px;    
+}
+
+.souffle .img15 img{
+    position: relative;
+    top: 36px;
+    width: 200px;
+    left: -28px;
+}
+
+.souffle h3{
+    position: relative;
+    top: 34px;
+    left: -23px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: small;
+}
+
+.souffle h1{
+    position: relative;
+    top: 20px;
+    left: 131px;
+    font-size: 12px;
+}
+
+.souffle button{
+     border: 2px solid gainsboro;
+    height: 33px;
+    margin: -44px;
+    position: relative;
+    width: 208px;
+    margin-top: 46px;
+    margin-left: -28px;
+    font-size: 13px;
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+}
+
+.souffle button:hover {
+    background: #fff;
+    color: rgb(0, 0, 0);
+    border: 0.5px solid rgb(0, 0, 0);
+}

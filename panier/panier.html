@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panier - Fat Fat</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="panier.css">
+</head>
+
+<body>
+    <div class="logo">
+        <a href="/accueil/accueil.html"><img src="/accueil/imagesAcceuil/Image 7@2x.png" alt=""></a>
+    </div>
+    <div class="debut">
+        <h1>PANIER</h1>
+    </div>
+    <div class="den">
+        <h2>Produit&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Prix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Quantite
+        </h2>
+    </div>
+
+    <div class="items"></div>
+
+    <div class="final">
+        <h1>TOTAL DU PANIER</h1>
+        <h2>Sous-total:</h2>
+        <h3>Frais De Livraison:</h3>
+        <h4>Total:</h4>
+        <div class="final1">
+            <h1 id="sous-total">23 MAD</h1>
+            <h2>10 DH TTC</h2>
+            <h3 id="total">33 DH</h3>
+        </div>
+        <a href="/panier/checkout/checkout.html"><button>Checkout</button></a>
+    </div>
+
+    <script>
+        generateProductsInPanier()
+
+        function generateProductsInPanier() {
+            const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+            const itemsEl = document.querySelector('.items')
+            itemsEl.innerHTML = ''
+
+            for (const product of productsInPanier) {
+                const productEl = document.createElement('div')
+                productEl.innerHTML = `
+                <img  src="${product.imgSrc}" alt="" style="margin-top:49px;margin-left:157px;width:60px;height:60px;">
+                <button id='remove' class="btn badge badge-danger" style="margin-left:-160px;border: white; margin-top:70px; color: black; cursor:pointer; background-color: white; position: absolute;" type="button" data-action="remove-item">x</button>
+                <h3 style="font-size:14px;margin-left:298px;margin-top:-41px;">${product.shortName}</h3>
+                <h2 style="font-size:14px;color:grey;margin-left:458px;margin-top:-14px;">${product.name}</h2>
+                <h1 style="font-size:14px;color:black;margin-left:838px;margin-top:-16px;">${product.price}</h1>
+        </div>
+        <div class="main">
+            <div class="wrapper">
+                <span id="minus" style="cursor: pointer; margin-top: 3px; margin-left: 9px; position: absolute; align-items: center; justify-content: center; flex-direction: row;">-</span>
+                <span class="mx-2" style="margin-top: 5px; margin-left: 38px; position: absolute; height: 50px; align-items: center; justify-content: center; flex-direction: row;">${product.items}</span>
+                <span id="plus" style="margin-top: 5px; cursor: pointer; margin-left: 68px; width: 52px; position: absolute; height: 50px; align-items: center; justify-content: center; flex-direction: row;">+</span>
+            </div>
+        </div>
+        
+    `
+                const minusBtn = productEl.querySelector('#minus');
+                const plusBtn = productEl.querySelector('#plus');
+                const removeBtn = productEl.querySelector('#remove');
+
+                removeBtn.addEventListener('click', () => {
+                    const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+                    localStorage.setItem('panier', JSON.stringify(productsInPanier.filter(productItem => productItem.id !== product.id)))
+                    generateProductsInPanier()
+                })
+
+                minusBtn.addEventListener('click', () => {
+                    const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+                    const newPanier = productsInPanier.map(productItem => {
+                        if (productItem.id === product.id) {
+                            const newValue = product;
+                            newValue.items = newValue.items - 1
+                            return newValue
+                        } else {
+                            return productItem
+                        }
+                    })
+
+                    localStorage.setItem('panier', JSON.stringify(newPanier.filter(productItem => productItem.items !== 0)))
+                    generateProductsInPanier()
+                })
+
+                plusBtn.addEventListener('click', () => {
+                    const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+                    const newPanier = productsInPanier.map(productItem => {
+                        if (productItem.id === product.id) {
+                            const newValue = product;
+                            newValue.items = newValue.items + 1
+                            return newValue
+                        } else {
+                            return productItem
+                        }
+                    })
+
+                    localStorage.setItem('panier', JSON.stringify(newPanier))
+                    generateProductsInPanier()
+
+                })
+
+                itemsEl.appendChild(productEl)
+            }
+
+            if (productsInPanier.length !== 0) {
+                const sousTotalEl = document.querySelector('#sous-total')
+                const totalEl = document.querySelector('#total')
+                sousTotalEl.textContent = productsInPanier.reduce((total, productItem) => {
+                    return (+productItem.price.split(' ').at(0)) * productItem.items + total
+                }, 0) + ' MAD'
+
+                totalEl.textContent = productsInPanier.reduce((total, productItem) => {
+                    return (+productItem.price.split(' ').at(0)) * productItem.items + total
+                }, 10) + ' MAD'
+
+            } else {
+                const finalEl = document.querySelector('.final')
+                finalEl.remove()
+            }
+
+        }
+    </script>
+</body>
+
+</html>

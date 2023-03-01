@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AL HORRA - Fat Fat</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="horra.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="horra" id="horra">
+        <img src="735219_1.png" alt="">
+        <h3>AL HORRA</h3>
+        <h2>Huile d'olive 1L - AL HORRA</h2>
+        <h1>30.25 DH</h1>
+        <button onclick="addToPanier()">AJOUTER</button>
+    </div>
+    <script>
+        const currentProduct = {
+            id: 'horra',
+            imgSrc: '/accueil/ProductsDetails/horra/735219_1.png',
+            shortName: "AL HORRA",
+            name: "Huile d'olive 1L - AL HORRA",
+            price: "30.25 DH",
+            items:1
+        }
+
+        function addToPanier() {
+            const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+            if (productsInPanier.some(product => product.id === currentProduct.id)) {
+                // product is in panier
+                alert('product is in panier')
+                return
+            }
+            productsInPanier.push(currentProduct)
+            localStorage.setItem('panier', JSON.stringify(productsInPanier))
+            window.open("/panier/panier.html")
+        }
+    </script>
+</body>
+
+</html>

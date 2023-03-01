@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Fat Fat - Search</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.slim.min.js"></script>
+    <script src="jquery.js"></script>
+</head>
+<body> 
+    <style>
+   .logo img{
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 1rem;
+    cursor: pointer;
+   }
+    </style>
+<div class="logo">
+    <a href="/accueil/accueil.html"><img src="logo.png" alt=""></a> 
+</div>
+    <div class="container p-5 mt-2">
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-6">
+                <div class="input-group  ">
+                    <input type="text" placeholder="Search......." class="form-control" style="border: 1px solid rgb(168, 20, 70);" id="inp">
+                    <div class="input-group-append">
+                        <button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Search</button>
+                    </div>   
+                </div>
+            </div>
+        </div>
+        <div class="row p-5 " id="pannel">
+            <h1 class="display-3 text-center text-muted" id="not_find_any_thing"></h1>
+            <div class="col-md-3 mt-5 ">
+                <div class="cards p-2 ">
+                    <img class="card-img-top" src="Grilled Cheese Cake.png" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Grilled Cheese Cake</h5>
+                            <span class="text-success" style="font-size: 13px; margin-top: 4px;">23 MAD</span>
+                        </div>
+                        <p class="card-text " style="font-size: 14px;">Dessert lacte vanille a la française Mon<br>Grec 125g - ELLE & VIRE</p>
+                        <div class="d-flex justify-content-between ">
+                           <a href="/shop/shop.html"><button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5 ">
+                <div class="cards p-2 ">
+                    <img class="card-img-top" src="Madeleine Cake.png" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Madeleine Cake</h5>
+                            <span class="text-success" style="font-size: 13px; margin-top: 4px;">23 MAD</span>
+                        </div>
+                        <p class="card-text " style="font-size: 14px;">Bonbons a Farame naturel de<br>menthe 125g - VERQUIN</p>
+                        <div class="d-flex justify-content-between ">
+                            <a href="/shop/shop.html"><button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5 ">
+                <div class="cards p-2 ">
+                    <img class="card-img-top" src="Meringue Cake.png" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Meringue Cake</h5>
+                            <span class="text-success" style="font-size: 13px; margin-top: 4px;">23 MAD</span>
+                        </div>
+                        <p class="card-text " style="font-size: 14px;">Le gâteau est une confiserie de farine à base de farine</p>
+                        <div class="d-flex justify-content-between ">
+                            <a href="/shop/shop.html"><button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5 ">
+                <div class="cards p-2 ">
+                    <img class="card-img-top" src="Group 3662.png" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Souffle Cake</h5>
+                            <span class="text-success" style="font-size: 13px; margin-left: 16px; margin-top: 4px;">23 MAD</span>
+                        </div>
+                        <p class="card-text " style="font-size: 14px;">Douche creme miel de lavande<br>250ml - LE PETIT MARSEILLAIS</p>
+                        <div class="d-flex justify-content-between ">
+                            <a href="/shop/shop.html"><button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5 ">
+                <div class="cards p-2 ">
+                    <img class="card-img-top" src="Sweet Cakes.png" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Sweet Cakes</h5>
+                            <span class="text-success">23 MAD</span>
+                        </div>
+                        <p class="card-text " style="font-size: 14px;">Savon a la lavande hydrate et<br>rafraichit 4x125g - TAOUS</p>
+                        <div class="d-flex justify-content-between ">
+                            <a href="/shop/shop.html"><button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5 ">
+                <div class="cards p-2 ">
+                    <img class="card-img-top" src="Chocolat.png" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">Chocolat</h5>
+                            <span class="text-success">23 MAD</span>
+                        </div>
+                        <p class="card-text " style="font-size: 14px;">Hulle de table 2L -<br>LOUSRA</p>
+                        <div class="d-flex justify-content-between ">
+                            <a href="/shop/shop.html"><button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5 ">
+                <div class="cards p-2 ">
+                    <img class="card-img-top" src="Image 121.png" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">MAGIX</h5>
+                            <span class="text-success">7,50 DH</span>
+                        </div>
+                        <p class="card-text " style="font-size: 14px;">Pate lavante 500g -<br>MAGIX</p>
+                        <div class="d-flex justify-content-between ">
+                            <a href="/shop/shop.html"><button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mt-5 ">
+                <div class="cards p-2 ">
+                    <img class="card-img-top" src="Image 122.png" alt="">
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between">
+                            <h5 class="card-title">AL BOUSTANE</h5>
+                            <span class="text-success">18,95 DH</span>
+                        </div>
+                        <p class="card-text " style="font-size: 14px;">Al Boustane Pur jus d'orange<br>Bio il</p>
+                        <div class="d-flex justify-content-between ">
+                            <a href="/shop/shop.html"><button type="button" style="background-color: rgb(168, 20, 70);" class="btn btn-dark" id="search">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script>
+    
+$(document).ready(function () {
+$('#search').click(function () {
+    var checker = 0;
+    for (var i = 0; i < 12; i++) {
+        var card = $("div").filter(".col-md-3")[i];
+        var title = $("h5").filter(".card-title")[i].innerText.toUpperCase();
+        if (title.indexOf($("#inp").val().toUpperCase()) > -1) {
+            card.style.display = 'block';
+            checker++;
+        }
+        else {
+            card.style.display = 'none';
+        }
+    }
+    if(checker > 0){
+        $("#not_find_any_thing").text("");
+    }
+    else{
+        $("#not_find_any_thing").text("No Result Found").fadeIn();
+
+    }
+});
+});
+
+</script>
+
+
+</body>
+</html>

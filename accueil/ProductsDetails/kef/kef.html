@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEF - Fat Fat</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="kef.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="kef" id="kef">
+        <img src="4e5cbc630c37088d1794c498561260ef.png" alt="">
+        <h3>EL KEF</h3>
+        <h2>Savon de ménage au citron 200g - EL KEF</h2>
+        <h1>4.30 DH</h1>
+        <button onclick="addToPanier()">AJOUTER</button>
+    </div>
+    <script>
+        const currentProduct = {
+            id: 'kef',
+            imgSrc: '/accueil/ProductsDetails/kef/4e5cbc630c37088d1794c498561260ef.png',
+            shortName: "EL KEF",
+            name: "Savon de ménage au citron 200g - EL KEF",
+            price: "4.30 DH",
+            items:1
+        }
+
+        function addToPanier() {
+            const productsInPanier = JSON.parse(window.localStorage.getItem("panier")) || [];
+            if (productsInPanier.some(product => product.id === currentProduct.id)) {
+                // product is in panier
+                alert('product is in panier')
+                return
+            }
+            productsInPanier.push(currentProduct)
+            localStorage.setItem('panier', JSON.stringify(productsInPanier))
+            window.open("/panier/panier.html")
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONI - Fat Fat</title>
+    <link rel="icon" href="l.png" type="image/x-icon" width="1px">
+    <link rel="stylesheet" href="oni.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="">
+    </div>
+    <div class="oni" id="oni">
+        <img src="679657_1.png" alt="">
+        <h3>ONI</h3>
+        <h2>Pâte lavante lavande 500g - ONI</h2>
+        <h1>8,20 DH</h1>
+        <button onclick="myFunction()">AJOUTER</button>
+    </div>
+    <script>
+        function myFunction() {
+            window.localStorage.setItem('pdtoni',JSON.stringify({name:'oni'} ));
+            alert('bien ajouter');
+            window.open("/panier.html");
+        }
+   </script> 
+</body>
+</html>
